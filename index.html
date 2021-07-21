@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mine Swapper</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+
+  <body onload="initGame()">
+    <h1>Mine Swapper</h1>
+    <div class="level">
+        <h2>Choose level:</h2>
+      <button  onclick="userChoseLevel('Hard')">Hard</button>
+      <button  onclick="userChoseLevel('Medium')">Medium</button>
+      <button  onclick="userChoseLevel('Easy')">Easy</button>
+    </div>
+    <br />
+    <br />
+    <div class="data">
+        <button class="lives"><span> </span></button>
+        <button class="smiley" onclick="smileyPress()" ><span></span></button>
+        <button class="timer"><span>30</span>s</button>
+      </div>
+    <br />
+    <br />
+    <div class="board-container"></div>
+
+    <script src="js/game.js"></script>
+    <script src="js/utils.js"></script>
+  </body>
+</html>

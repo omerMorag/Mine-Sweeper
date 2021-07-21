@@ -1,0 +1,92 @@
+
+.cell {
+  background-color:hsl(213, 26%, 55%);
+   width:50px;
+    height:50px;
+    text-align: center;
+    margin:  5%;
+    border:30%;
+    
+}
+
+body{
+  text-align: center;
+  background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#15ffa5, #00ced1);
+  background-color: mediumspringgreen;
+  background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+  background-repeat: repeat;
+}
+
+
+.board-container{
+  margin-top: 3%;
+  margin-left: 31%;
+  
+}
+
+h1{
+  font-family: Impact, fantasy;
+  font-weight: 2000;
+  font-size: 5rem;
+  margin-bottom: 1%;;
+  color:#223241
+}
+
+
+.level{
+  text-align: center;
+  display: block;
+	font-family:Impact, fantasy;;
+  color:#223241;
+  font-weight: 100;
+}
+
+.level button{
+  box-shadow: 0px 10px 14px -7px #276873;
+	background-color:transparent;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#223241;
+  font-weight: 60;
+	font-size:20px;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+  margin-left:  1%;
+}
+
+  .level button:active {
+    position:relative;
+    top:1px;
+  }
+
+ 
+  .smiley{
+    margin-top: 1%;;
+  }
+
+  .data{
+    display:none;
+  }
+  .data button{
+    background-color:transparent;
+    border-radius:28px;
+    border:1px solid #4e6096;
+    cursor:pointer;
+    color:#223241;
+    font-family:Arial;
+    font-size:15px;
+    padding:16px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #283966;
+    margin-left:  1%;
+    width: 15%;
+  }
+
+  .data button :active {
+    position:relative;
+    top:1px;
+  }
+
+
