@@ -58,7 +58,7 @@ function initGameAfterLevelChose() {
     elLevel.style.display = 'none';
     elData.style.display = 'inline';
     elDataDown.style.display = 'inline';
-    renderHtmlForLIves();
+    renderLives();
     renderHints();
     renderSmiley(HAPPY);
     renderRecord();
@@ -86,7 +86,6 @@ function gameOver(isWon) {
     stopTimer();
     gGame.isOn = false;
     gGame.userChoseLevel = false;
-    var elDataDown = document.querySelector('.data-down');
     checkIfRecord();
 
     if (isWon) {
@@ -166,11 +165,11 @@ function boomClick(elCell, i, j) {
     if (gGame.livesLeft > 1) {
         elCell.innerHTML = MINE;
         gGame.livesLeft--;
-        renderHtmlForLIves();
+        renderLives();
     }
     else {
         gGame.livesLeft--;
-        renderHtmlForLIves();
+        renderLives();
         elCell.style.backgroundColor = "red";
         //move on mine on boarf
         for (var i = 0; i < gBoard.length; i++) {

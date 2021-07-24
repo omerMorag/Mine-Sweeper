@@ -41,7 +41,7 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-function renderHtmlForLIves() {
+function renderLives() {
     var str = '';
     var elLives = document.querySelector('.lives span');
     if (gGame.livesLeft === 0) str += BROKEN_HEART;

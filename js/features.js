@@ -29,8 +29,8 @@ function getHint(i, j, elCell) {
             if (d < 0 || d > gBoard[0].length - 1) continue
             if ((!gBoard[n][d].isShown)) {
                 var elCurrentCell = document.querySelector(`.cell${n}-${d}`);
-                if (gBoard[i][j].isMine) renderCell(elCurrentCell, MINE);
-                if (gBoard[i][j].minesAroundCount > 0) renderCell(elCurrentCell, gBoard[i][j].minesAroundCount);
+                if (gBoard[n][d].isMine) renderCell(elCurrentCell, MINE);
+                if (gBoard[n][d].minesAroundCount > 0) renderCell(elCurrentCell, gBoard[n][d].minesAroundCount);
                 elCurrentCell.classList.add('showen');
             }
         }
